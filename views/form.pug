@@ -1,0 +1,33 @@
+html
+html
+    head
+    body
+        <h1> Student Resume with Details</h1>
+        hr 
+        br
+        form(action="/", method="POST", enctype="multipart/form-data")
+            div 
+                label(for="first") First Name: 
+                input(name="first" value="Rick")
+            br
+            div 
+                label(for="last") Last Name: 
+                input(name="last" value="Astley")
+            br
+            div 
+                label(for="dob") Date of Birth: 
+                input#date_of_birth.form-control(type='date' name='date_of_birth' value= (undefined===author ? '' : author.date_of_birth))
+            br
+            div 
+                label(for="qual") Qualification: 
+                input(name="qual" value="Graduate")
+            br
+            div 
+                label(for="nation") Nationality: 
+                input(name="nation" value="Vulcan")
+            br
+            div 
+                label(for="picture") Upload Picture: 
+                input(type='file', name='file')
+            br
+            button(type="submit") Submit
